@@ -4,7 +4,7 @@ import ScrollFadeIn from '../components/ScrollFadeIn';
 // data
 import { myWorkData } from '../utils/myWorkData';
 
-const MyWork = () => {
+const MyWork: React.FC = () => {
   return (
     <div className='h-auto bg-light-blue pt-24'>
       <div className='mx-auto w-4/5'>

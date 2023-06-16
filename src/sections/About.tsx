@@ -6,7 +6,7 @@ import PDF from '../assets/resume.pdf';
 // utils
 import { skillSetData } from '../utils/skillSetData';
 
-const About = () => {
+const About: React.FC = () => {
   return (
     <div className='h-auto bg-light-blue bg-zoom text-dark-gray pt-24'>
       <div className='md:flex gap-10 w-4/5 mx-auto'>

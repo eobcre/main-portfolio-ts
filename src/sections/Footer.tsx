@@ -1,4 +1,4 @@
-const Footer = () => {
+const Footer: React.FC = () => {
   return (
     <div className='bg-light-blue h-20 md:hidden'>
       <div className='glass h-20'>

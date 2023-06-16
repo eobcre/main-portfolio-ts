@@ -1,0 +1,152 @@
+/* - - - Global CSS - - - */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* - - - Tailwind - - - */
+/* Settings */
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* @apply */
+@layer components {
+  .nav-items-st {
+    @apply text-center text-xl opacity-50 text-dark-gray hover:opacity-100 transition-all duration-300 p-3 xl:text-2xl;
+  }
+
+  .effect-st {
+    @apply text-lg text-dark-gray font-bebas hover:opacity-70 transition-all duration-300 hover:underline underline-offset-4;
+  }
+
+  .sub-st {
+    @apply text-dark-gray text-3xl font-bebas border-l-4 px-3 md:text-4xl;
+  }
+
+  .bio-st {
+    @apply text-dark-gray text-lg opacity-90;
+  }
+
+  .skill-st {
+    @apply bg-clear-tape border-l-2 border-r-2 border-dotted text-lg text-dark-gray font-bebas px-8 h-8 leading-loose;
+  }
+
+  .my-work-title-st {
+    @apply text-3xl text-dark-gray font-bebas pt-6 border-b md:pt-0;
+  }
+
+  .my-work-st {
+    @apply text-dark-gray text-lg opacity-90 font-arial my-6;
+  }
+
+  .contact-st {
+    @apply px-2 py-2 placeholder-gray-400 text-gray-600 font-arial relative bg-white rounded border-0 shadow outline-none focus:outline-none focus:ring w-full md:px-3 md:py-3;
+  }
+
+  .tech-st {
+    @apply text-white text-sm mr-4;
+  }
+}
+
+/* Font */
+@font-face {
+  src: url('./assets/Font.woff2') format('woff2');
+  font-family: 'Bebas Neue';
+  font-display: swap;
+}
+
+/* Preloader */
+.preloader-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #34caf4;
+  width: 100vw;
+  height: 100vh;
+}
+
+.loading {
+  animation: zoom 2s infinite ease-in-out;
+  -webkit-animation: zoom 2s infinite ease-in-out;
+}
+
+@keyframes zoom {
+  0% {
+    transform: scale(0);
+    -webkit-transform: scale(0);
+  }
+  100% {
+    transform: scale(1);
+    -webkit-transform: scale(1);
+  }
+}
+
+/* Glassmorphism */
+.glass {
+  background: rgba(255, 255, 255, 0.19);
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(9px);
+  -webkit-backdrop-filter: blur(9px);
+  border: 1px solid rgba(255, 255, 255, 0.3);
+}
+
+/* - - - Animations - - - */
+/* Fade-in */
+.ScrollFadeIn {
+  opacity: 0;
+  transform: translateY(20vh);
+  -webkit-transform: translateY(20vh);
+  visibility: hidden;
+  transition: opacity 0.6s ease-out, transform 1.2s ease-out;
+  -webkit-transition: opacity 0.6s ease-out, -webkit-transform 1.2s ease-out;
+  will-change: opacity, visibility;
+}
+
+.ScrollFadeIn.fade-styling {
+  opacity: 1;
+  transform: none;
+  -webkit-transform: none;
+  visibility: visible;
+}
+
+/* Fade-up */
+.mainFadeup {
+  animation: fadeup 0.8s forwards;
+  -webkit-animation: fadeup 0.8s forwards;
+  opacity: 0;
+}
+
+@keyframes fadeup {
+  from {
+    opacity: 0;
+    transform: translateY(100px);
+    -webkit-transform: translateY(100px);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateY(0);
+    -webkit-transform: translateY(0);
+  }
+}
+
+.mainFadeupDelay_1 {
+  animation-delay: 0.4s;
+  -webkit-animation-delay: 0.4s;
+}
+
+.mainFadeupDelay_2 {
+  animation-delay: 0.8s;
+  -webkit-animation-delay: 0.8s;
+}
+
+/* Dialogflow */
+df-messenger {
+  --df-messenger-button-titlebar-color: white;
+  --df-messenger-button-titlebar-color: #303030;
+  --df-messenger-button-titlebar-font-color: #ffffff;
+  --df-messenger-send-icon: #303030;
+  --df-messenger-user-message: #e5e4e2;
+}

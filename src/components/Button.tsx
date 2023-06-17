@@ -1,4 +1,9 @@
-const Button = (props) => {
+type ButtonProps = {
+  name: string;
+  link: string;
+};
+
+const Button: React.FC<ButtonProps> = (props) => {
   return (
     <div className='py-10'>
       <a

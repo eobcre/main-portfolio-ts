@@ -6,8 +6,8 @@ interface ScrollFadeInProps {
 }
 
 const ScrollFadeIn: React.FC<ScrollFadeInProps> = ({ children }) => {
-  const [visible, setVisible] = useState(false);
-  const documentRef = useRef();
+  const [visible, setVisible] = useState<boolean>(false);
+  const documentRef = useRef<HTMLDivElement>(null);
 
   useEffect(() => {
     const observer = new IntersectionObserver((entries) => {
@@ -15,7 +15,13 @@ const ScrollFadeIn: React.FC<ScrollFadeInProps> = ({ children }) => {
         return entry.isIntersecting && setVisible(true);
       });
     });
-    observer.observe(documentRef.current);
+
+    // null check
+    documentRef.current ? observer.observe(documentRef.current) : null;
+    // clean up
+    // return () => {
+    //   observer.disconnect();
+    // };
   }, []);
 
   return (

@@ -1,4 +1,8 @@
-const ButtonSubmit = (props) => {
+type ButtonSubmitProps = {
+  name: string;
+};
+
+const ButtonSubmit: React.FC<ButtonSubmitProps> = (props) => {
   return (
     <div className='flex justify-center py-8'>
       <button

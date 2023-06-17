@@ -1,6 +1,7 @@
-type ButtonSubmitProps = {
+// interface
+interface ButtonSubmitProps {
   name: string;
-};
+}
 
 const ButtonSubmit: React.FC<ButtonSubmitProps> = (props) => {
   return (

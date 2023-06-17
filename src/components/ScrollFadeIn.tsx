@@ -1,6 +1,11 @@
 import React, { useState, useEffect, useRef } from 'react';
 
-const ScrollFadeIn = ({ children }) => {
+// interface
+interface ScrollFadeInProps {
+  children: React.ReactNode;
+}
+
+const ScrollFadeIn: React.FC<ScrollFadeInProps> = ({ children }) => {
   const [visible, setVisible] = useState(false);
   const documentRef = useRef();
 

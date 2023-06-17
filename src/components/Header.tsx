@@ -7,10 +7,10 @@ import Logo from '../assets/logo.png';
 // pdf
 import PDF from '../assets/resume.pdf';
 
-const Header = () => {
-  const [navbar, setNavbar] = useState(false);
+const Header: React.FC = () => {
+  const [navbar, setNavbar] = useState<boolean>(false);
 
-  const toggle = () => {
+  const toggle: () => void = () => {
     setNavbar((prevState) => !prevState);
   };
 

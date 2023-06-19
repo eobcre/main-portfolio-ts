@@ -18,10 +18,6 @@ const ScrollFadeIn: React.FC<ScrollFadeInProps> = ({ children }) => {
 
     // null check
     documentRef.current ? observer.observe(documentRef.current) : null;
-    // clean up
-    // return () => {
-    //   observer.disconnect();
-    // };
   }, []);
 
   return (

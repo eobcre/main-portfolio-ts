@@ -1,25 +1,41 @@
 import { useEffect } from 'react';
 
+// global namespace and custom JSX interface
+declare global {
+  namespace JSX {
+    interface IntrinsicElements {
+      'df-messenger': any;
+    }
+  }
+}
+
 const ChatBot = () => {
   // prevent duplicate elements dl-messenger-list
   useEffect(() => {
-    if (!window.dfMessengerLoaded) {
+    if (!(window as any).dfMessengerLoaded) {
       const script = document.createElement('script');
       script.src =
         'https://www.gstatic.com/dialogflow-console/fast/messenger/bootstrap.js?v=1';
       script.async = true;
       document.body.appendChild(script);
-      window.dfMessengerLoaded = true;
+      (window as any).dfMessengerLoaded = true;
     }
+
     // customize chat widget height
     const dfMessenger = document.querySelector('df-messenger');
-    dfMessenger.addEventListener('df-messenger-loaded', function () {
-      const dfMessengerChat =
-        dfMessenger.shadowRoot.querySelector('df-messenger-chat');
+    dfMessenger?.addEventListener('df-messenger-loaded', () => {
+      // console.log('Dialogflow Messenger loaded');
+      const dfMessengerChat = dfMessenger.shadowRoot?.querySelector(
+        'df-messenger-chat'
+      ) as HTMLElement;
+      // if (dfMessengerChat.shadowRoot) {
+      //   console.log('shadowRoot exists');
+      // } else {
+      //   console.log('shadowRoot does not exist');
+      // }
       const style = document.createElement('style');
-      style.innerHTML =
-        'div.chat-wrapper[opened="true"]{ height:470px; max-height:470px; }';
-      dfMessengerChat.shadowRoot.appendChild(style);
+      style.innerHTML = 'div.chat-wrapper { height:470px; max-height:470px; }';
+      dfMessengerChat.shadowRoot?.appendChild(style);
     });
   }, []);
 

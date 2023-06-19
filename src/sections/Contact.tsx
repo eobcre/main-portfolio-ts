@@ -89,7 +89,7 @@ const Contact: React.FC = () => {
                 required
               />
             </div>
-            <ButtonSubmit name='Send' link='#' />
+            <ButtonSubmit name='Send' />
           </form>
         </div>
       </div>

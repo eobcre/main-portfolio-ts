@@ -10,10 +10,10 @@ declare global {
 }
 
 const ChatBot = () => {
-  // prevent duplicate elements dl-messenger-list
+  // prevent duplicate elements df-messenger-list
   useEffect(() => {
     if (!(window as any).dfMessengerLoaded) {
-      console.log((window as any).dfMessengerLoaded);
+      // console.log((window as any).dfMessengerLoaded);
       const script = document.createElement('script');
       script.src =
         'https://www.gstatic.com/dialogflow-console/fast/messenger/bootstrap.js?v=1';

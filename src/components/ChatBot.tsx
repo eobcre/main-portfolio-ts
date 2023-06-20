@@ -1,6 +1,6 @@
 import { useEffect } from 'react';
 
-// global namespace and custom JSX interface
+// ambient for JSX
 declare global {
   namespace JSX {
     interface IntrinsicElements {
@@ -13,6 +13,7 @@ const ChatBot = () => {
   // prevent duplicate elements dl-messenger-list
   useEffect(() => {
     if (!(window as any).dfMessengerLoaded) {
+      console.log((window as any).dfMessengerLoaded);
       const script = document.createElement('script');
       script.src =
         'https://www.gstatic.com/dialogflow-console/fast/messenger/bootstrap.js?v=1';

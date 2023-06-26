@@ -18,7 +18,7 @@ const Home: React.FC = () => {
       </div>
 
       {/* card */}
-      <div className='mainFadeup box mainFadeupDelay_2 glass mx-auto w-380 md:w-600'>
+      <div className='mainFadeup box mainFadeupDelay_2 rounded-md glass mx-auto w-380 md:w-600'>
         <span className='md:absolute bottom-3/4 -left-12 rotate-12 w-24 h-8 bg-clear-tape md:border-l-2 md:border-r-2 border-dotted'></span>
         <span className='md:absolute bottom-2/4 -right-12 -rotate-12 w-24 h-8 bg-clear-tape md:border-l-2 md:border-r-2 border-dotted'></span>
         <main className='max-w-21 mx-auto'>

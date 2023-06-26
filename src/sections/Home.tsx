@@ -13,7 +13,7 @@ const Home: React.FC = () => {
           Emmy Manning
         </h1>
         <h2 className='mainFadeup mainFadeupDelay_1 text-xl text-dark-gray font-bebas'>
-          Love to build creative and magical things
+          Front-end Developer | Beaver, PA
         </h2>
       </div>
 

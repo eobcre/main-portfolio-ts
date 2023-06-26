@@ -5,6 +5,8 @@
   "type": "module",
   "scripts": {
     "dev": "vite",
+    "heroku-postbuild": "npm run build",
+    "start": "serve -s build",
     "build": "tsc && vite build",
     "lint": "eslint src --ext ts,tsx --report-unused-disable-directives --max-warnings 0",
     "preview": "vite preview"
@@ -15,6 +17,7 @@
     "react-dom": "^18.2.0",
     "react-icons": "^4.9.0",
     "react-scroll": "^1.8.9",
+    "serve": "^14.2.0",
     "sweetalert2": "^11.7.12",
     "sweetalert2-react-content": "^5.0.7"
   },

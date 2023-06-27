@@ -39,7 +39,7 @@ const Contact: React.FC = () => {
     <div className='h-auto bg-light-blue py-20 md:py-24'>
       <div className='mx-auto w-4/5'>
         <h1 className='sub-st mb-10'>Contact</h1>
-        <div className='glass px-8'>
+        <div className='glass rounded-md px-8'>
           <span className='hidden absolute md:block md:top-10 -right-12 -rotate-12 w-24 h-8 bg-clear-tape md:border-l-2 md:border-r-2 md:border-dotted'></span>
           <span className='hidden absolute md:block md:bottom-12 -left-12 rotate-12 w-24 h-8 bg-clear-tape md:border-l-2 md:border-r-2 md:border-dotted'></span>
 

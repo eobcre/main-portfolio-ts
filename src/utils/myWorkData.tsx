@@ -17,7 +17,7 @@ export const myWorkData = [
   },
   {
     id: nanoid(),
-    name: 'Sticky Notes App',
+    name: 'Sticky Note App',
     src: '../../work_assets/post-app.png',
     logo: '../../work_assets/post-app.jpg',
     url: 'https://sticky-notes-app.herokuapp.com/',

@@ -11,7 +11,7 @@ const Button: React.FC<ButtonProps> = (props) => {
         href={props.link}
         target='_blank'
         rel='noopener noreferrer'
-        className='bg-dark-gray text-white text-2xl hover:text-light-blue rounded-md transition-all px-20 py-2'
+        className='bg-dark-gray text-white text-2xl hover:text-light-blue rounded-md transition-all px-12 py-2'
       >
         <span className='font-bebas'>{props.name}</span>
       </a>

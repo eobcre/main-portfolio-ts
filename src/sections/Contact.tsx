@@ -39,26 +39,14 @@ const Contact: React.FC = () => {
     <div className='h-auto bg-light-blue py-20 md:py-24'>
       <div className='mx-auto w-4/5'>
         <h1 className='sub-st mb-10'>Contact</h1>
-        <div className='glass rounded-md px-8'>
-          <span className='hidden absolute md:block md:top-10 -right-12 -rotate-12 w-24 h-8 bg-clear-tape md:border-l-2 md:border-r-2 md:border-dotted'></span>
-          <span className='hidden absolute md:block md:bottom-12 -left-12 rotate-12 w-24 h-8 bg-clear-tape md:border-l-2 md:border-r-2 md:border-dotted'></span>
-
+        <div className='glass shadow-showcase-bg rounded-md px-8'>
           <form onSubmit={sendEmail}>
             <h2 className='text-dark-gray text-2xl text-center font-bebas pt-8 md:text-3xl'>
               Lets Connect
             </h2>
-            <p className='text-dark-gray text-lg opacity-90 text-center font-arial pb-8'>
-              Please feel free to contact or connect me on{' '}
-              <a
-                href='https://www.linkedin.com/in/emmymanning'
-                target='_blank'
-                rel='noopener noreferrer'
-                className='font-bebas text-lg uppercase pl-0.5 hover:underline underline-offset-4 hover:opacity-70 transition-all duration-300'
-              >
-                LinkedIn
-              </a>
-              .
-              <br />I will get back to you as soon as possible.
+            <p className='text-dark-gray text-lg opacity-90 text-center font-arial py-4'>
+              Please feel free to contact me! I will get back to you as soon as
+              possible.
             </p>
 
             <div className='py-2'>

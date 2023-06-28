@@ -8,16 +8,18 @@ module.exports = {
         'dark-gray': '#303030',
         'off-white': '#FFFFFE',
         'clear-tape': 'rgba(255,255,255,.4)',
+        pink: '#E15783',
+        teal: '#4682B4',
       },
       backgroundImage: {
-        webTop: "url('./assets/bg.jpg')",
+        'main-image': "url('./assets/bg.jpg')",
       },
-      backgroundSize: {
-        zoom: '100rem',
+      boxShadow: {
+        'showcase-bg': '3px 3px 3px 2px rgb(64, 126, 177)',
       },
       spacing: {
-        380: '380px',
-        600: '600px',
+        360: '360px',
+        480: '480px',
         minus: '-63px',
       },
       maxWidth: {

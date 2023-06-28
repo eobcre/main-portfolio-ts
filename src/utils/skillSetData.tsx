@@ -15,7 +15,7 @@ export const skillSetData = [
   },
   {
     id: nanoid(),
-    skill: 'Tailwind',
+    skill: 'Tailwind CSS',
   },
   {
     id: nanoid(),
@@ -31,7 +31,7 @@ export const skillSetData = [
   },
   {
     id: nanoid(),
-    skill: 'React.js',
+    skill: 'React',
   },
   {
     id: nanoid(),

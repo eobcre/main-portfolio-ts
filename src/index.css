@@ -1,12 +1,12 @@
-/* - - - Global CSS - - - */
+/* - - - css reset - - - */
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
 
-/* - - - Tailwind - - - */
-/* Settings */
+/* - - - tailwind - - - */
+/* settings */
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
@@ -14,7 +14,7 @@
 /* @apply */
 @layer components {
   .nav-items-st {
-    @apply text-center text-2xl text-dark-gray hover:opacity-70 transition-all hover:underline underline-offset-4 p-3 xl:text-2xl;
+    @apply text-center text-2xl text-dark-gray hover:opacity-70 transition-all hover:underline underline-offset-4 pl-6 py-2 xl:text-2xl;
   }
 
   .effect-st {
@@ -26,7 +26,7 @@
   }
 
   .bio-st {
-    @apply text-dark-gray text-lg opacity-90;
+    @apply text-dark-gray text-lg opacity-80;
   }
 
   .skill-st {
@@ -38,7 +38,7 @@
   }
 
   .my-work-st {
-    @apply text-dark-gray text-lg opacity-90 font-arial my-6;
+    @apply text-dark-gray text-lg opacity-80 font-arial my-6;
   }
 
   .contact-st {
@@ -46,18 +46,18 @@
   }
 
   .tech-st {
-    @apply text-white text-sm mr-4;
+    @apply text-white opacity-80 text-sm mr-4;
   }
 }
 
-/* Font */
+/* font */
 @font-face {
   src: url('./assets/Font.woff2') format('woff2');
   font-family: 'Bebas Neue';
   font-display: swap;
 }
 
-/* Preloader */
+/* preloader */
 .preloader-container {
   display: flex;
   justify-content: center;
@@ -83,17 +83,16 @@
   }
 }
 
-/* Glassmorphism */
+/* glass effect */
 .glass {
   background: rgba(255, 255, 255, 0.19);
-  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
   backdrop-filter: blur(9px);
   -webkit-backdrop-filter: blur(9px);
   border: 1px solid rgba(255, 255, 255, 0.3);
 }
 
-/* - - - Animations - - - */
-/* Fade-in */
+/* - - - animations - - - */
+/* base fade-in effect */
 .ScrollFadeIn {
   opacity: 0;
   transform: translateY(20vh);
@@ -111,8 +110,8 @@
   visibility: visible;
 }
 
-/* Fade-up */
-.mainFadeup {
+/* card fade-in effect */
+.card-fade-in {
   animation: fadeup 0.8s forwards;
   -webkit-animation: fadeup 0.8s forwards;
   opacity: 0;
@@ -132,17 +131,7 @@
   }
 }
 
-.mainFadeupDelay_1 {
-  animation-delay: 0.4s;
-  -webkit-animation-delay: 0.4s;
-}
-
-.mainFadeupDelay_2 {
-  animation-delay: 0.8s;
-  -webkit-animation-delay: 0.8s;
-}
-
-/* Dialogflow */
+/* dialogflow */
 df-messenger {
   --df-messenger-button-titlebar-color: white;
   --df-messenger-button-titlebar-color: #303030;

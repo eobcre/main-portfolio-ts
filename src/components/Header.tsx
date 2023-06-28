@@ -16,7 +16,7 @@ const Header: React.FC = () => {
 
   return (
     <nav className='w-full fixed top-0 z-10'>
-      <div className='glass px-4 md:flex justify-between items-center'>
+      <div className='glass px-6 py-3 md:flex items-center'>
         <div className='flex justify-between items-center'>
           <a href='./'>
             <img src={Logo} alt='Logo' width='40' />

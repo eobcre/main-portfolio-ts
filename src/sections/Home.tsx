@@ -5,7 +5,7 @@ const Home: React.FC = () => {
   return (
     <div className='w-screen h-screen bg-main-image bg-center bg-cover table-cell align-middle'>
       {/* card */}
-      <div className='card-fade-in rounded-md glass shadow-showcase-bg w-380 mx-auto md:ml-20 md:w-600 md:flex flex-col justify-center items-center'>
+      <div className='card-fade-in rounded-md glass shadow-showcase-bg w-360 mx-auto md:ml-20 md:w-480 md:flex flex-col justify-center items-center'>
         <main className=''>
           <div className='text-center py-8'>
             <h1 className='text-7xl text-dark-gray font-bebas py-4'>

@@ -16,7 +16,7 @@ const MyWork: React.FC = () => {
               <img
                 src={data.src}
                 alt={`${index}`}
-                className='hidden md:block'
+                className='hidden md:block shadow-showcase-bg rounded-md'
               />
             </div>
             <div className='md:w-2/4'>

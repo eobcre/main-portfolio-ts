@@ -5,6 +5,11 @@
   box-sizing: border-box;
 }
 
+html {
+  visibility: visible;
+  opacity: 1;
+}
+
 /* - - - tailwind - - - */
 /* settings */
 @tailwind base;

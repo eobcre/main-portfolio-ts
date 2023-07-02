@@ -3,11 +3,7 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-}
-
-html {
-  visibility: visible;
-  opacity: 1;
+  font-display: optional;
 }
 
 /* - - - tailwind - - - */

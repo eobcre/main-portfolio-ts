@@ -14,36 +14,36 @@
 
 /* @apply */
 @layer components {
-  .nav-items-st {
+  .nav-item {
     @apply text-center text-2xl text-dark-gray hover:text-pink duration-500 pl-6 py-2 xl:text-2xl;
   }
 
-  .sub-st {
+  .title {
     @apply text-dark-gray text-3xl font-bebas border-l-4 px-3 md:text-4xl;
   }
 
-  .bio-st {
+  .text {
     @apply text-dark-gray text-lg opacity-80;
   }
 
-  .skill-st {
+  .tech-set {
     @apply bg-clear-tape border-l-2 border-r-2 border-dotted text-lg text-dark-gray font-bebas px-8 h-8 leading-loose;
   }
 
-  .my-work-title-st {
+  .work-title {
     @apply text-3xl text-dark-gray font-bebas pt-6 border-b md:pt-0;
   }
 
-  .my-work-st {
+  .work-text {
     @apply text-dark-gray text-lg opacity-80 font-arial my-6;
   }
 
-  .contact-st {
-    @apply px-2 py-2 placeholder-gray-400 text-gray-600 font-arial relative bg-white rounded border-0 shadow outline-none focus:outline-none focus:ring w-full md:px-3 md:py-3;
+  .work-tech {
+    @apply text-white opacity-80 text-sm mr-4;
   }
 
-  .tech-st {
-    @apply text-white opacity-80 text-sm mr-4;
+  .form {
+    @apply px-2 py-2 placeholder-gray-400 text-gray-600 font-arial relative bg-white rounded border-0 shadow outline-none focus:outline-none focus:ring w-full md:px-3 md:py-3;
   }
 }
 

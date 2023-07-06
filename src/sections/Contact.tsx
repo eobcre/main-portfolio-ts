@@ -46,7 +46,16 @@ const Contact: React.FC = () => {
             </h2>
             <p className='text-dark-gray text-lg opacity-90 text-center font-arial py-4'>
               I am located in Beaver, PA. Please feel free to use the contact
-              form to reach out to me or via LinkendIn.
+              form to reach out to me or via{' '}
+              <a
+                href='https://www.linkedin.com/in/emmymanning/'
+                target='_blank'
+                rel='noopener noreferrer'
+                className='font-bold hover:underline hover:underline-offset-4'
+              >
+                LinkedIn
+              </a>
+              .
             </p>
 
             <div className='py-2'>

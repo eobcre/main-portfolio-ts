@@ -28,9 +28,9 @@ const Header: React.FC = () => {
               onClick={toggle}
             >
               {navbar ? (
-                <HiX className='text-4xl' /> // Close icon
+                <HiX className='text-4xl' /> // close icon
               ) : (
-                <HiMenuAlt4 className='text-4xl' /> // Open icon
+                <HiMenuAlt4 className='text-4xl' /> // open icon
               )}
             </button>
           </div>

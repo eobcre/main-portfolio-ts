@@ -45,8 +45,8 @@ const Contact: React.FC = () => {
               Lets Connect
             </h2>
             <p className='text-dark-gray text-lg opacity-90 text-center font-arial py-4'>
-              Please feel free to contact me! I will get back to you as soon as
-              possible.
+              I am located in Beaver, PA. Please feel free to use the contact
+              form to reach out to me or via LinkendIn.
             </p>
 
             <div className='py-2'>

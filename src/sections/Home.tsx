@@ -20,21 +20,21 @@ const Home: React.FC = () => {
                 target='_blank'
                 rel='noopener noreferrer'
               >
-                <FaLinkedin className='text-dark-gray text-5xl hover:text-pink duration-500' />
+                <FaLinkedin className='icon-set' />
               </a>
               <a
                 href='https://github.com/eobcre'
                 target='_blank'
                 rel='noopener noreferrer'
               >
-                <FaGithub className='text-dark-gray text-5xl hover:text-pink duration-500' />
+                <FaGithub className='icon-set' />
               </a>
               <a
                 href='https://www.instagram.com/emanning.dev/'
                 target='_blank'
                 rel='noopener noreferrer'
               >
-                <FaInstagram className='text-dark-gray text-5xl hover:text-pink duration-500' />
+                <FaInstagram className='icon-set' />
               </a>
             </div>
           </div>

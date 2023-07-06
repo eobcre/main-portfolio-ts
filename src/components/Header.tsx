@@ -39,7 +39,7 @@ const Header: React.FC = () => {
         <div className={`pb-8 md:block md:pb-0 ${navbar ? 'block' : 'hidden'}`}>
           <ul className='font-bebas justify-center items-center md:flex'>
             {/* about */}
-            <li className='nav-items-st'>
+            <li className='nav-item'>
               <Link
                 activeClass='active'
                 to='About'
@@ -53,7 +53,7 @@ const Header: React.FC = () => {
               </Link>
             </li>
             {/* my work */}
-            <li className='nav-items-st'>
+            <li className='nav-item'>
               <Link
                 activeClass='active'
                 to='MyWork'
@@ -67,7 +67,7 @@ const Header: React.FC = () => {
               </Link>
             </li>
             {/* contact */}
-            <li className='nav-items-st'>
+            <li className='nav-item'>
               <Link
                 activeClass='active'
                 to='Contact'
@@ -81,7 +81,7 @@ const Header: React.FC = () => {
               </Link>
             </li>
             {/* resume */}
-            <li className='nav-items-st'>
+            <li className='nav-item'>
               <a href={PDF} target='_blank' rel='noopener noreferrer'>
                 Resume
               </a>

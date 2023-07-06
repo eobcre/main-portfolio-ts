@@ -38,7 +38,7 @@ const Contact: React.FC = () => {
   return (
     <div className='h-auto bg-light-blue py-20 md:py-24'>
       <div className='mx-auto w-4/5'>
-        <h1 className='sub-st mb-10'>Contact</h1>
+        <h1 className='title mb-10'>Contact</h1>
         <div className='glass shadow-showcase-bg rounded-md px-8'>
           <form onSubmit={sendEmail}>
             <h2 className='text-dark-gray text-2xl text-center font-bebas pt-8 md:text-3xl'>
@@ -54,7 +54,7 @@ const Contact: React.FC = () => {
                 type='text'
                 placeholder='Name'
                 name='name'
-                className='contact-st'
+                className='form'
                 required
               />
             </div>
@@ -63,7 +63,7 @@ const Contact: React.FC = () => {
                 type='email'
                 placeholder='Email'
                 name='email'
-                className='contact-st'
+                className='form'
                 required
               />
             </div>
@@ -73,7 +73,7 @@ const Contact: React.FC = () => {
                 name='message'
                 rows={10}
                 cols={50}
-                className='contact-st'
+                className='form'
                 required
               />
             </div>

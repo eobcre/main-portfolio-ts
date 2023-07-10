@@ -38,7 +38,7 @@ const App = () => {
           <section id='About'>
             <About />
           </section>
-          <section id='MyWork'>
+          <section id='Work'>
             <MyWork />
           </section>
           <section id='Contact'>

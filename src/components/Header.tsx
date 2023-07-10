@@ -4,7 +4,8 @@ import { Link } from 'react-scroll';
 // icons
 import { HiMenuAlt4, HiX } from 'react-icons/hi';
 import Logo from '../assets/logo.png';
-// pdf
+// utils
+import { navItems } from '../utils/navItemsData';
 import PDF from '../assets/resume.pdf';
 
 const Header: React.FC = () => {
@@ -14,25 +15,6 @@ const Header: React.FC = () => {
     setNavbar((prevState) => !prevState);
   };
 
-  const navItems = [
-    {
-      item: 'About',
-      link: 'About',
-    },
-    {
-      item: 'Work',
-      link: 'Work',
-    },
-    {
-      item: 'Contact',
-      link: 'Contact',
-    },
-    {
-      item: 'Resume',
-      pdf: 'PDF',
-    },
-  ];
-
   return (
     <nav className='w-full fixed top-0 z-10'>
       <div className='glass px-6 py-3 md:flex items-center'>
@@ -41,7 +23,7 @@ const Header: React.FC = () => {
             <img src={Logo} alt='Logo' width='40' />
           </a>
 
-          {/* mobile menu button */}
+          {/* mobile nav button */}
           <div className='md:hidden'>
             <button
               className='text-dark-gray rounded-md outline-none py-2'

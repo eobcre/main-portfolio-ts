@@ -5,7 +5,7 @@ import ChatBot from './components/ChatBot';
 // Sections
 import Home from './sections/Home';
 import About from './sections/About';
-import MyWork from './sections/MyWork';
+import Work from './sections/Work';
 import Contact from './sections/Contact';
 import Footer from './sections/Footer';
 
@@ -39,7 +39,7 @@ const App = () => {
             <About />
           </section>
           <section id='Work'>
-            <MyWork />
+            <Work />
           </section>
           <section id='Contact'>
             <Contact />

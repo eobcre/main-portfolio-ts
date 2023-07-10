@@ -14,6 +14,25 @@ const Header: React.FC = () => {
     setNavbar((prevState) => !prevState);
   };
 
+  const navItems = [
+    {
+      item: 'About',
+      link: 'About',
+    },
+    {
+      item: 'Work',
+      link: 'Work',
+    },
+    {
+      item: 'Contact',
+      link: 'Contact',
+    },
+    {
+      item: 'Resume',
+      pdf: 'PDF',
+    },
+  ];
+
   return (
     <nav className='w-full fixed top-0 z-10'>
       <div className='glass px-6 py-3 md:flex items-center'>
@@ -21,6 +40,7 @@ const Header: React.FC = () => {
           <a href='./'>
             <img src={Logo} alt='Logo' width='40' />
           </a>
+
           {/* mobile menu button */}
           <div className='md:hidden'>
             <button
@@ -35,60 +55,35 @@ const Header: React.FC = () => {
             </button>
           </div>
         </div>
-        {/* nav list */}
+
+        {/* nav items */}
         <div className={`pb-8 md:block md:pb-0 ${navbar ? 'block' : 'hidden'}`}>
           <ul className='font-bebas justify-center items-center md:flex'>
-            {/* about */}
-            <li className='nav-item'>
-              <Link
-                activeClass='active'
-                to='About'
-                spy={true}
-                smooth={true}
-                offset={-10}
-                duration={500}
-                onClick={toggle}
-              >
-                About
-              </Link>
-            </li>
-            {/* my work */}
-            <li className='nav-item'>
-              <Link
-                activeClass='active'
-                to='MyWork'
-                spy={true}
-                smooth={true}
-                offset={-10}
-                duration={500}
-                onClick={toggle}
-              >
-                My Work
-              </Link>
-            </li>
-            {/* contact */}
-            <li className='nav-item'>
-              <Link
-                activeClass='active'
-                to='Contact'
-                spy={true}
-                smooth={true}
-                offset={-10}
-                duration={500}
-                onClick={toggle}
-              >
-                Contact
-              </Link>
-            </li>
-            {/* resume */}
-            <li className='nav-item'>
-              <a href={PDF} target='_blank' rel='noopener noreferrer'>
-                Resume
-              </a>
-            </li>
+            {navItems.map(({ item, link, pdf }, index) => (
+              <li className='nav-item' key={index}>
+                {pdf ? (
+                  <a href={PDF} target='_blank' rel='noopener noreferrer'>
+                    {item}
+                  </a>
+                ) : (
+                  <Link
+                    activeClass='active'
+                    to={link || ''}
+                    spy={true}
+                    smooth={true}
+                    offset={-10}
+                    duration={500}
+                    onClick={toggle}
+                  >
+                    {item}
+                  </Link>
+                )}
+              </li>
+            ))}
           </ul>
         </div>
       </div>
+
       {/* copyright */}
       <div className='fixed bottom-0 text-dark-gray text-2xl [writing-mode:vertical-rl] [text-orientation:sideways-right] px-4 py-8'>
         <p className='hidden md:block md:text-dark-gray font-bebas'>

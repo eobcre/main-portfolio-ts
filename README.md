@@ -5,7 +5,7 @@
 - React
 - Vite
 - TypeScript
-- Tailwind
+- Tailwind CSS
 - react-icons
 - react-scroll
 - @emailjs/browser

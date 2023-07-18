@@ -1,6 +1,6 @@
 ![bg-banner](https://user-images.githubusercontent.com/88697509/199711934-b17c9fec-c909-4e1f-9bf0-48ccd1ebeb44.png)
 
-# main-portfolio
+# main-portfolio-ts
 
 - React
 - Vite

@@ -3,6 +3,20 @@ import { nanoid } from 'nanoid';
 export const workData = [
   {
     id: nanoid(),
+    name: 'Movie App',
+    src: '../../work_assets/movie-app.png',
+    logo: '../../work_assets/movie-app.jpg',
+    url: 'https://movie-new-app-c1f4d014fe65.herokuapp.com/',
+    description:
+      'Action! Welcome to Visionix, it is a simple movie app built with API. This is my latest achievement in mastering asynchronous.',
+    tech1: 'React',
+    tech2: 'Vite',
+    tech3: 'TypeScript',
+    tech4: 'HTML',
+    tech5: 'Sass',
+  },
+  {
+    id: nanoid(),
     name: 'Salon Website',
     src: '../../work_assets/salon.png',
     logo: '../../work_assets/salon.jpg',

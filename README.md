@@ -1,6 +1,7 @@
 ![bg-banner](https://user-images.githubusercontent.com/88697509/199711934-b17c9fec-c909-4e1f-9bf0-48ccd1ebeb44.png)
 
-<a href="https://www.emanning.dev" target="_blank">Live Demo</a>
+<a href="https://www.emanning.dev" target='_blank'
+rel='noopener noreferrer'>Live Demo</a>
 
 # main-portfolio-ts
 

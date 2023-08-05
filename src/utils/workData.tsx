@@ -8,7 +8,7 @@ export const workData = [
     logo: '../../work_assets/movie-app.jpg',
     url: 'https://movie-new-app-c1f4d014fe65.herokuapp.com/',
     description:
-      'Action! Welcome to Lukub, it is a simple movie app built with OMDB API. This is my latest achievement in mastering asynchronous. Dark theme mode feature is coming soon!',
+      'Action! Welcome to Lukub, it is a simple movie app built with OMDB API. This is my latest achievement in mastering asynchronous and dark mode features. Login screen is coming soon!',
     tech1: 'React',
     tech2: 'Vite',
     tech3: 'TypeScript',

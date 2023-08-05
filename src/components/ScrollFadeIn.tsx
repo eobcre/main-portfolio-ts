@@ -1,9 +1,8 @@
 import React, { useState, useEffect, useRef } from 'react';
 
-// interface
-interface ScrollFadeInProps {
+type ScrollFadeInProps = {
   children: React.ReactNode;
-}
+};
 
 const ScrollFadeIn: React.FC<ScrollFadeInProps> = ({ children }) => {
   const [visible, setVisible] = useState<boolean>(false);

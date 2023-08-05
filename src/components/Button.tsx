@@ -1,8 +1,7 @@
-// interface
-interface ButtonProps {
+type ButtonProps = {
   name: string;
   link: string;
-}
+};
 
 const Button: React.FC<ButtonProps> = (props) => {
   return (

@@ -37,7 +37,7 @@ const MyWork: React.FC = () => {
                   <span className='work-tech'>{data.tech4}</span>
                   <span className='work-tech'>{data.tech5}</span>
                 </div>
-                <Button name='View App' link={data.url} />
+                <Button name='View App' type='link' link={data.url} />
               </ScrollFadeIn>
             </div>
           </div>

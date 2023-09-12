@@ -1,5 +1,5 @@
 // components
-import ButtonSubmit from '../components/ButtonSubmit';
+import Button from '../components/Button';
 // libraries
 import EmailJS from '@emailjs/browser';
 import Swal from 'sweetalert2';
@@ -86,7 +86,7 @@ const Contact: React.FC = () => {
                 required
               />
             </div>
-            <ButtonSubmit name='Send' />
+            <Button name='Send' type='submit' />
           </form>
         </div>
       </div>

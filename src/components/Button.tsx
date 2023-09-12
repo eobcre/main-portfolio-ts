@@ -1,8 +1,7 @@
-// Button.tsx
 type ButtonProps = {
   name: string;
-  link?: string; // Make the link prop optional
-  type?: 'link' | 'submit'; // Add a type prop to specify the button type
+  link?: string;
+  type?: 'link' | 'submit';
 };
 
 const Button: React.FC<ButtonProps> = (props) => {

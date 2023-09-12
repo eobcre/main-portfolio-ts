@@ -22,7 +22,7 @@ const About: React.FC = () => {
               coding and curious about learning new technologies! See my resume
               for additional details.
             </p>
-            <Button name='Resume' link={PDF} />
+            <Button name='Resume' type='link' link={PDF} />
           </ScrollFadeIn>
         </div>
         <div className='pt-20 md:pt-0 md:w-2/4'>

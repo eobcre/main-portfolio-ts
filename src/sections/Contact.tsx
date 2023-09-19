@@ -42,20 +42,10 @@ const Contact: React.FC = () => {
         <div className='glass shadow-showcase-bg rounded-md px-8'>
           <form onSubmit={sendEmail}>
             <h2 className='text-dark-gray text-2xl text-center font-bebas pt-8 md:text-3xl'>
-              Lets Connect
+              Say Hello
             </h2>
             <p className='text-dark-gray text-lg opacity-90 text-center font-arial py-4'>
-              I am located in Beaver, PA. Please feel free to use the contact
-              form to reach out to me or via{' '}
-              <a
-                href='https://www.linkedin.com/in/emmymanning/'
-                target='_blank'
-                rel='noopener noreferrer'
-                className='font-bold hover:underline hover:underline-offset-4'
-              >
-                LinkedIn
-              </a>
-              .
+              Please feel free to use the contact form to reach out to me!
             </p>
 
             <div className='py-2'>
@@ -86,7 +76,7 @@ const Contact: React.FC = () => {
                 required
               />
             </div>
-            <Button name='Send' type='submit' />
+            <Button name='Hello' type='submit' />
           </form>
         </div>
       </div>

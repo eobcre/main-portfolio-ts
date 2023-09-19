@@ -21,17 +21,17 @@ const Home: React.FC = () => {
                 target='_blank'
                 rel='noopener noreferrer'
               >
-                <FaLinkedin className='icon-set' />
+                <FaLinkedin className='home-component-icon' />
               </a>
               <a
                 href='https://github.com/eobcre'
                 target='_blank'
                 rel='noopener noreferrer'
               >
-                <FaGithub className='icon-set' />
+                <FaGithub className='home-component-icon' />
               </a>
               <a href='mailto:eobcre@gmail.com'>
-                <HiOutlineMail className='icon-set' />
+                <HiOutlineMail className='home-component-icon' />
               </a>
             </div>
           </div>

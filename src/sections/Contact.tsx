@@ -53,7 +53,7 @@ const Contact: React.FC = () => {
                 type='text'
                 placeholder='Name'
                 name='name'
-                className='form'
+                className='contact-component-form'
                 required
               />
             </div>
@@ -62,7 +62,7 @@ const Contact: React.FC = () => {
                 type='email'
                 placeholder='Email'
                 name='email'
-                className='form'
+                className='contact-component-form'
                 required
               />
             </div>
@@ -72,7 +72,7 @@ const Contact: React.FC = () => {
                 name='message'
                 rows={10}
                 cols={50}
-                className='form'
+                className='contact-component-form'
                 required
               />
             </div>

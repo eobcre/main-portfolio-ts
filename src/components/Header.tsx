@@ -44,7 +44,7 @@ const Header: React.FC = () => {
         <div className={`pb-8 md:block md:pb-0 ${navbar ? 'block' : 'hidden'}`}>
           <ul className='font-bebas justify-center items-center md:flex'>
             {navItems.map(({ item, link, pdf }, index) => (
-              <li className='nav-item' key={index}>
+              <li className='header-component-nav-item' key={index}>
                 {pdf ? (
                   <a href={PDF} target='_blank' rel='noopener noreferrer'>
                     {item}

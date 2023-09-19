@@ -38,7 +38,7 @@ const Contact: React.FC = () => {
   return (
     <div className='h-auto bg-light-blue py-20 md:py-24'>
       <div className='mx-auto w-4/5'>
-        <h1 className='title mb-10'>Contact</h1>
+        <h1 className='all-component-title mb-10'>Contact</h1>
         <div className='glass shadow-showcase-bg rounded-md px-8'>
           <form onSubmit={sendEmail}>
             <h2 className='text-dark-gray text-2xl text-center font-bebas pt-8 md:text-3xl'>

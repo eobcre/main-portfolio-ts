@@ -3,7 +3,6 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-display: optional;
 }
 
 /* - - - tailwind - - - */
@@ -14,39 +13,39 @@
 
 /* @apply */
 @layer components {
-  .nav-item {
+  .header-component-nav-item {
     @apply text-center text-2xl text-dark-gray hover:text-pink duration-500 pl-6 py-2 xl:text-2xl;
   }
 
-  .icon-set {
-    @apply text-dark-gray text-5xl hover:text-pink duration-500;
-  }
-
-  .title {
+  .all-component-title {
     @apply text-dark-gray text-3xl font-bebas border-l-4 px-3 md:text-4xl;
   }
 
-  .text {
+  .home-component-icon {
+    @apply text-dark-gray text-5xl hover:text-pink duration-500;
+  }
+
+  .about-component-text {
     @apply text-dark-gray text-lg opacity-80;
   }
 
-  .tech-set {
+  .about-component-tech {
     @apply bg-clear-tape border-l-2 border-r-2 border-dotted text-lg text-dark-gray font-bebas px-8 h-8 leading-loose;
   }
 
-  .work-title {
+  .work-component-title {
     @apply text-3xl text-dark-gray font-bebas pt-6 border-b md:pt-0;
   }
 
-  .work-text {
+  .work-component-description {
     @apply text-dark-gray text-lg opacity-80 font-arial my-6;
   }
 
-  .work-tech {
+  .work-component-tech {
     @apply text-white opacity-80 text-sm mr-4;
   }
 
-  .form {
+  .contact-component-form {
     @apply px-2 py-2 placeholder-gray-400 text-gray-600 font-arial relative bg-white rounded border-0 shadow outline-none focus:outline-none focus:ring w-full md:px-3 md:py-3;
   }
 }

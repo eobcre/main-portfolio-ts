@@ -1,5 +1,6 @@
 // react-icons
-import { FaLinkedin, FaGithub, FaInstagram } from 'react-icons/fa';
+import { FaLinkedin, FaGithub } from 'react-icons/fa';
+import { HiOutlineMail } from 'react-icons/hi';
 
 const Home: React.FC = () => {
   return (
@@ -29,12 +30,8 @@ const Home: React.FC = () => {
               >
                 <FaGithub className='icon-set' />
               </a>
-              <a
-                href='https://www.instagram.com/emanning.dev/'
-                target='_blank'
-                rel='noopener noreferrer'
-              >
-                <FaInstagram className='icon-set' />
+              <a href='mailto:eobcre@gmail.com'>
+                <HiOutlineMail className='icon-set' />
               </a>
             </div>
           </div>

@@ -29,7 +29,7 @@ const MyWork: React.FC = () => {
               <h2 className='work-component-title'>{data.name}</h2>
               <ScrollFadeIn>
                 <p className='work-component-description'>{data.description}</p>
-                <div>
+                <div className='flex flex-wrap gap-y-3'>
                   <span className='work-component-tech all-component-tech'>
                     {data.tech1}
                   </span>

@@ -13,14 +13,14 @@ const About: React.FC = () => {
         <div className='md:w-2/4'>
           <h1 className='all-component-title mb-10'>About Me</h1>
           <ScrollFadeIn>
-            <p className='about-component-text font-arial'>
+            <p className='about-component-text font-text'>
               Hello! My name is Emmy and I enjoy creating magical things. I am a
-              recent graduate (as of March 2023) in AI technology. I have
-              experience working in the IT industry and am skilled in coding and
-              designing. I have had the privilege of working on map alignments
-              and survey app development. I am always passionate about creative
-              coding and curious about learning new technologies! See my resume
-              for additional details.
+              recent graduate - as of March 2023 - in Computer Science major in
+              AI Technology. I have experience working in the IT industry and am
+              skilled in coding and designing. I have had the privilege of
+              working on map alignments and survey app development. I am always
+              passionate about creative coding and curious about learning new
+              technologies!
             </p>
             <Button name='Resume' type='link' link={PDF} />
           </ScrollFadeIn>
@@ -28,10 +28,13 @@ const About: React.FC = () => {
         <div className='pt-20 md:pt-0 md:w-2/4'>
           <h1 className='all-component-title mb-10'>My Skills</h1>
           <div className='flex flex-wrap gap-4'>
-            {skillSetData.map(({ id, skill }) => {
+            {skillSetData.map(({ id, skill, icon }) => {
               return (
                 <div key={id}>
-                  <p className='about-component-tech'>{skill}</p>
+                  <p className='about-component-tech all-component-tech'>
+                    <span>{icon}</span>
+                    {skill}
+                  </p>
                 </div>
               );
             })}

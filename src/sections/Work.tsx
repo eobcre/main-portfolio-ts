@@ -12,7 +12,6 @@ const MyWork: React.FC = () => {
         {workData.map((data, index) => (
           <div key={data.id} className='mt-10 md:flex gap-10 md:mt-20'>
             <div className='w-auto backdrop-blur md:w-2/4'>
-              <span className='hidden md:block absolute md:-top-4 left-inset40 rotate-45 w-24 h-8 bg-clear-tape border-l-2 border-r-2 border-dotted'></span>
               <img
                 src={data.src}
                 alt={`${index}`}
@@ -31,11 +30,21 @@ const MyWork: React.FC = () => {
               <ScrollFadeIn>
                 <p className='work-component-description'>{data.description}</p>
                 <div>
-                  <span className='work-component-tech'>{data.tech1}</span>
-                  <span className='work-component-tech'>{data.tech2}</span>
-                  <span className='work-component-tech'>{data.tech3}</span>
-                  <span className='work-component-tech'>{data.tech4}</span>
-                  <span className='work-component-tech'>{data.tech5}</span>
+                  <span className='work-component-tech all-component-tech'>
+                    {data.tech1}
+                  </span>
+                  <span className='work-component-tech all-component-tech'>
+                    {data.tech2}
+                  </span>
+                  <span className='work-component-tech all-component-tech'>
+                    {data.tech3}
+                  </span>
+                  <span className='work-component-tech all-component-tech'>
+                    {data.tech4}
+                  </span>
+                  <span className='work-component-tech all-component-tech'>
+                    {data.tech5}
+                  </span>
                 </div>
                 <Button name='View App' type='link' link={data.url} />
               </ScrollFadeIn>

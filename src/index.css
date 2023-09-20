@@ -42,7 +42,7 @@
   }
 
   .work-component-tech {
-    @apply text-dark-gray text-lg font-main opacity-80 mr-3 px-6 py-2;
+    @apply text-dark-gray text-lg font-main mr-3 px-6 py-2;
   }
 
   .contact-component-form {

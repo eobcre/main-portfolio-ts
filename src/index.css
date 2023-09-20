@@ -14,11 +14,11 @@
 /* @apply */
 @layer components {
   .header-component-nav-item {
-    @apply text-center text-2xl text-dark-gray hover:text-pink duration-500 pl-6 py-2 xl:text-2xl;
+    @apply text-2xl text-dark-gray hover:text-pink duration-500 text-center pl-6 py-2 xl:text-2xl;
   }
 
   .all-component-title {
-    @apply text-dark-gray text-3xl font-bebas border-l-4 px-3 md:text-4xl;
+    @apply text-dark-gray text-3xl font-main border-l-4 px-3 md:text-4xl;
   }
 
   .home-component-icon {
@@ -30,24 +30,30 @@
   }
 
   .about-component-tech {
-    @apply bg-clear-tape border-l-2 border-r-2 border-dotted text-lg text-dark-gray font-bebas px-8 h-8 leading-loose;
+    @apply flex justify-center items-center gap-2 text-dark-gray text-xl font-main w-[150px] h-[60px];
   }
 
   .work-component-title {
-    @apply text-3xl text-dark-gray font-bebas pt-6 border-b md:pt-0;
+    @apply text-dark-gray text-3xl font-main pt-6 border-b md:pt-0;
   }
 
   .work-component-description {
-    @apply text-dark-gray text-lg opacity-80 font-arial my-6;
+    @apply text-dark-gray text-lg opacity-80 font-text my-6;
   }
 
   .work-component-tech {
-    @apply text-white opacity-80 text-sm mr-4;
+    @apply text-dark-gray text-lg font-main opacity-80 mr-3 px-6 py-2;
   }
 
   .contact-component-form {
-    @apply px-2 py-2 placeholder-gray-400 text-gray-600 font-arial relative bg-white rounded border-0 shadow outline-none focus:outline-none focus:ring w-full md:px-3 md:py-3;
+    @apply px-2 py-2 placeholder-gray-400 text-gray-600 font-text relative bg-white rounded border-0 shadow outline-none focus:outline-none focus:ring w-full md:px-3 md:py-3;
   }
+}
+
+.all-component-tech {
+  border-radius: 12px;
+  background: #34c7f2;
+  box-shadow: inset 5px 5px 10px #30b7df, inset -5px -5px 10px #38d7ff;
 }
 
 /* font */
@@ -55,32 +61,6 @@
   src: url('./assets/Font.woff2') format('woff2');
   font-family: 'Bebas Neue';
   font-display: swap;
-}
-
-/* preloader */
-.preloader-container {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  background-color: #34caf4;
-  width: 100vw;
-  height: 100vh;
-}
-
-.loading {
-  animation: zoom 2s infinite ease-in-out;
-  -webkit-animation: zoom 2s infinite ease-in-out;
-}
-
-@keyframes zoom {
-  0% {
-    transform: scale(0);
-    -webkit-transform: scale(0);
-  }
-  100% {
-    transform: scale(1);
-    -webkit-transform: scale(1);
-  }
 }
 
 /* glass effect */

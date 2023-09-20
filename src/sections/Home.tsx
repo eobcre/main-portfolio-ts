@@ -9,13 +9,13 @@ const Home: React.FC = () => {
       <div className='card-fade-in rounded-md glass shadow-showcase-bg w-360 mx-auto md:ml-20 min-[600px]:w-480 md:flex flex-col justify-center items-center'>
         <main className=''>
           <div className='text-center py-8'>
-            <h1 className='text-7xl text-dark-gray font-bebas py-4'>
+            <h1 className='text-7xl text-dark-gray font-main py-4'>
               Emmy Manning
             </h1>
-            <h2 className='text-xl text-dark-gray font-bebas'>
+            <h2 className='text-lg text-dark-gray font-text'>
               Front-end Developer | Beaver, PA
             </h2>
-            <div className='icon-container flex justify-center items-center gap-4 py-4'>
+            <div className='icon-container flex justify-center items-center gap-4 py-5'>
               <a
                 href='https://www.linkedin.com/in/emmymanning/'
                 target='_blank'

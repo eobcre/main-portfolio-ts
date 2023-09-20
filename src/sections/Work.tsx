@@ -6,7 +6,7 @@ import { workData } from '../utils/workData';
 
 const MyWork: React.FC = () => {
   return (
-    <div className='h-auto bg-light-blue pt-24'>
+    <div className='h-auto bg-light-blue py-24'>
       <div className='mx-auto w-4/5'>
         <h1 className='all-component-title'>My Work</h1>
         {workData.map((data, index) => (

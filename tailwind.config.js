@@ -29,8 +29,8 @@ module.exports = {
         '5xl': '2.75rem',
       },
       fontFamily: {
-        arial: ['Arial'],
-        bebas: ['Bebas Neue', 'cursive'],
+        main: ['Bebas Neue', 'cursive'],
+        text: ['Garamond'],
       },
       inset: {
         inset40: '40%',

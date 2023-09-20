@@ -30,7 +30,7 @@
   }
 
   .about-component-tech {
-    @apply flex justify-center items-center gap-2 text-dark-gray text-xl font-main w-[150px] h-[60px];
+    @apply flex flex-wrap justify-center items-center gap-2 text-dark-gray text-xl font-main w-[130px] h-[60px];
   }
 
   .work-component-title {

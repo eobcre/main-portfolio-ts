@@ -42,7 +42,7 @@ const Header: React.FC = () => {
 
         {/* nav items */}
         <div className={`pb-8 md:block md:pb-0 ${navbar ? 'block' : 'hidden'}`}>
-          <ul className='font-bebas justify-center items-center md:flex'>
+          <ul className='font-main justify-center items-center md:flex'>
             {navItems.map(({ item, link, pdf }, index) => (
               <li className='header-component-nav-item' key={index}>
                 {pdf ? (

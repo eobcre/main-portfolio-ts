@@ -28,16 +28,14 @@ const About: React.FC = () => {
         <div className='pt-20 md:pt-0 md:w-2/4'>
           <h1 className='all-component-title mb-10'>My Skills</h1>
           <div className='flex flex-wrap gap-4'>
-            {skillSetData.map(({ id, skill, icon }) => {
-              return (
-                <div key={id}>
-                  <p className='about-component-tech all-component-tech'>
-                    <span>{icon}</span>
-                    {skill}
-                  </p>
-                </div>
-              );
-            })}
+            {skillSetData.map((skillData) => (
+              <div key={skillData.id}>
+                <p className='about-component-tech all-component-tech'>
+                  <span>{skillData.icon}</span>
+                  {skillData.skill}
+                </p>
+              </div>
+            ))}
           </div>
         </div>
       </div>

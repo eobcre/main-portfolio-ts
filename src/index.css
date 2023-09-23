@@ -60,7 +60,6 @@
 @font-face {
   src: url('./assets/Font.woff2') format('woff2');
   font-family: 'Bebas Neue';
-  font-display: swap;
 }
 
 /* glass effect */
